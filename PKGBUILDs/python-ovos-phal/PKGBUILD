@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc='OVOS-PHAL'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos_PHAL/'
-license=('')
+license=('Apache')
 depends=('ovos-core' 'ovos-service-base' 'ovos-messagebus-server' 'python' 'python-sdnotify' \
 'python-ovos-workshop>=0.0.12a3' #>=0.0.12a3,~=0.0 \
 'python-ovos-bus-client>=0.0.3a16' #>=0.0.3a16,~=0.0 \

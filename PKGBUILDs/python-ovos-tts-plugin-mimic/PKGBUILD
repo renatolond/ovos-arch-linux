@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='OVOS TTS plugin for Mimic'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic/'
-license=('')
+license=('Apache')
 depends=(python mycroft-mimic1 'python-ovos-plugin-manager>=0.0.5')
 conflicts=()
 makedepends=(python-build python-installer python-wheel python-setuptools)

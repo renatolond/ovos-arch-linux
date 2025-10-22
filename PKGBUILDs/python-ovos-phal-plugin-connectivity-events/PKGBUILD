@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='OVOS-PHAL Connectivity Events'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/'
-license=('')
+license=('Apache')
 depends=(python \
 'python-ovos-plugin-manager' \
 )

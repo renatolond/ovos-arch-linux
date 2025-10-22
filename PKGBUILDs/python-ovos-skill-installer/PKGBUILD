@@ -13,7 +13,7 @@ ovos_skills_manager, as an end user your probably
 should be using that and not this repository directly.'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos_skill_installer/'
-license=('')
+license=('MIT')
 depends=(python \
 )
 conflicts=()

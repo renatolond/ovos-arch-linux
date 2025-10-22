@@ -20,7 +20,7 @@ scikit-learn algorithms
 minimum viable implementation to ensure lang support'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-classifiers/'
-license=('')
+license=('Apache')
 depends=(python \
 'python-joblib' \
 'python-nltk' \

@@ -9,7 +9,7 @@ pkgdesc='
 '
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-ocp-rss-plugin/'
-license=('')
+license=('Apache')
 depends=(python \
 'python-feedparser' \
 'python-ovos-ocp-audio-plugin' \

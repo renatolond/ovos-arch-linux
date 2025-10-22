@@ -1,14 +1,14 @@
 _gh_org=OpenVoiceOS
 _gh_proj=ovos-stt-plugin-server
 pkgname=python-ovos-stt-plugin-server
-_name=ovos-stt-plugin-server
+_name=ovos-stt-server-plugin
 _base_ver='8f440da949ced2f823383b87acb7c7e502cdb7ff'
 pkgver=0.0.4
 pkgrel=1
 pkgdesc='OpenVoiceOS companion plugin for OpenVoiceOS STT Server'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-stt-plugin-server/'
-license=('')
+license=('Apache')
 depends=(python \
 'python-ovos-plugin-manager>=0.0.5' \
 )
@@ -18,7 +18,7 @@ makedepends=(python-build python-installer python-wheel python-setuptools)
 source=("https://github.com/$_gh_org/$_gh_proj/archive/$_base_ver.tar.gz")
 sha256sums=(
    #python-ovos-stt-plugin-server-8f440da949ced2f823383b87acb7c7e502cdb7ff.tar.gz \
-   e722f87a3e1b5c7ae89d690f9e924122fdaedb6aa4bf1e7470ce64b756ed33d0)
+   SKIP)
 
 prepare() {
     cd "$srcdir"

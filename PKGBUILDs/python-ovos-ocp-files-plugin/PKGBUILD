@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='A library for reading and, in the future, writing audio metadata.'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-ocp-files-plugin/'
-license=('')
+license=('MIT')
 depends=(python \
 'python-attrs>=18.2' \
 'python-bidict' \

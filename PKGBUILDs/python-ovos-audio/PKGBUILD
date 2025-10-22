@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc='The "mouth" of the OVOS assistant! Handles TTS generation and audio playback'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-audio/'
-license=('')
+license=('Apache')
 depends=('ovos-core' 'ovos-service-base' 'ovos-messagebus-server' 'python' 'python-sdnotify' \
 'python-ovos-ocp-audio-plugin>=0.0.5a3' #>=0.0.5a3,~=0.0 \
 'python-ovos-bus-client>=0.0.3a4' #>=0.0.3a4,~=0.0 \

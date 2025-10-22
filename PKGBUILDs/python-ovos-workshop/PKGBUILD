@@ -1,7 +1,7 @@
 pkgname=python-ovos-workshop
 _gh_org=OpenVoiceOS
 _gh_proj=OVOS-workshop
-_name=OVOS-workshop
+_name=ovos-workshop
 _commit='2e667955539792222b1609c1edb9ff4767d2f35c'
 pkgver='0.0.15'
 pkgrel=00
@@ -33,7 +33,7 @@ optdepends+=(
 
 #### End of automatically generated dependencies.
 source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz")
-sha256sums=('e5a0991c13d0e3f92e2fc6316350ab2d9857a54a4fc108316f9c807323c58255')
+sha256sums=('SKIP')
 
 prepare() {
     cd "$srcdir"

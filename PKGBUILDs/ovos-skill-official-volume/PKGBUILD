@@ -1,7 +1,7 @@
 _gh_org=OpenVoiceOS
 _gh_proj=skill-ovos-volume
 pkgname=ovos-skill-official-volume
-_name=skill-ovos-volume
+_name=ovos-skill-volume
 _commit='0feb9cfa55593ee011fdaf1141c6e5db864da104'
 pkgver=0.0.1
 pkgrel=1
@@ -19,7 +19,7 @@ provides=("$pkgname")
 conflicts+=("$pkgname")
 
 source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz")
-sha256sums=('169474a8d1f9f53a2954b2510e4e704cc37dff25eaf40686bc55494f8bada035')
+sha256sums=('SKIP')
 
 prepare() {
     cd "$srcdir"

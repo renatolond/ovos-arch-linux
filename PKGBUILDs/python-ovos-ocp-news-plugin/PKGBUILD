@@ -9,7 +9,7 @@ pkgdesc='
 '
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-ocp-news-plugin/'
-license=('')
+license=('Apache')
 depends=(python \
 'python-beautifulsoup4' \
 'python-ovos-ocp-audio-plugin' \

@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='ovos plugin for voice activity detection using webrtcvad'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-vad-plugin-webrtcvad/'
-license=('')
+license=('Apache')
 depends=(python \
 'python-ovos-plugin-manager>=0.0.11' \
 'python-webrtcvad' \

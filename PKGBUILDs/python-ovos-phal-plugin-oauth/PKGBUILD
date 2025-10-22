@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='PHAL OAuth Plugin'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-PHAL-plugin-oauth/'
-license=('')
+license=('Apache')
 depends=(python \
 'python-flask>=0.12' \
 'python-oauthlib' \
