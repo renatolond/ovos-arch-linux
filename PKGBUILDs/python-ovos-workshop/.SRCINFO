@@ -1,7 +1,7 @@
 pkgbase = python-ovos-workshop
 	pkgdesc = frameworks, templates and patches for the mycroft universe
-	pkgver = 0.0.15
-	pkgrel = 00
+	pkgver = 0.1.1
+	pkgrel = 1
 	url = https://github.com/OpenVoiceOS/OVOS-workshop/
 	arch = any
 	license = Apache License 2.0
@@ -14,14 +14,16 @@ pkgbase = python-ovos-workshop
 	depends = python-ovos-bus-client>=0.0.8
 	depends = python-ovos-config>=0.0.12
 	depends = python-ovos-lingua-franca>=0.4.6
-	depends = python-ovos-utils>=0.0.37
+	depends = python-ovos-utils>=0.0.38
 	depends = python-rapidfuzz
+	optdepends = python-ovos-classifiers>=0.0.0a46
 	optdepends = python-ovos-ocp-audio-plugin
-	conflicts = python-ovos-backend-client>=0.2.0
-	conflicts = python-ovos-bus-client>=0.2.0
-	conflicts = python-ovos-config>=0.2.0
-	conflicts = python-ovos-utils>=0.2.0
-	source = https://github.com/OpenVoiceOS/OVOS-workshop/archive/2e667955539792222b1609c1edb9ff4767d2f35c.tar.gz
-	sha256sums = e5a0991c13d0e3f92e2fc6316350ab2d9857a54a4fc108316f9c807323c58255
+	conflicts = python-ovos-backend-client>=1.0.0
+	conflicts = python-ovos-bus-client>=1.0.0
+	conflicts = python-ovos-config>=1.0.0
+	conflicts = python-ovos-lingua-franca>=1.0.0
+	conflicts = python-ovos-utils>=1.0.0
+	source = https://github.com/OpenVoiceOS/OVOS-workshop/archive/72351ac1037c00b5736b2efa6a5d62c664faf6e5.tar.gz
+	sha256sums = ae5c49cbeb118aca44381e4d95d4b9bae4bd9cc60739369879df9427a794840a
 
 pkgname = python-ovos-workshop
