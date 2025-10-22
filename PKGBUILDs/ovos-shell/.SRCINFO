@@ -1,7 +1,7 @@
 pkgbase = ovos-shell
 	pkgdesc = OpenVoiceOS Shell on EGLFS: This is a minimal shell which is intended to run on low power hardware either as "single application" on a minimal wayland server or with eglfs backend.
 	pkgver = 0.0.1
-	pkgrel = 02
+	pkgrel = 3
 	url = https://github.com/OpenVoiceOS/ovos-shell/
 	arch = x86_64
 	arch = aarch64
@@ -34,7 +34,7 @@ pkgbase = ovos-shell
 	optdepends = python-ovos-phal-plugin-network-manager
 	optdepends = python-ovos-phal-plugin-gui-network-client
 	optdepends = python-ovos-phal-plugin-wifi-setup
-	source = https://github.com/OpenVoiceOS/ovos-shell/archive/0f3335b0aa3a806b130a6a79299d79c75bc12c0e.tar.gz
-	sha256sums = 743862ed78d9e5d4a71740706f25e379468dedc5a94598dbc54b6c4273c94485
+	source = https://github.com/OpenVoiceOS/ovos-shell/archive/b15be64bae7c3a0f9df735ac41b2f02eef3e78d3.tar.gz
+	sha256sums = d5d3770513a389b57710cc7d0ec7d779e66a5b66fabc64174afe8a114f90aee9
 
 pkgname = ovos-shell

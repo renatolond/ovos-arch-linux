@@ -1,9 +1,9 @@
 _gh_org=OpenVoiceOS
 _gh_proj=ovos-shell
 pkgname=ovos-shell
-_commit='0f3335b0aa3a806b130a6a79299d79c75bc12c0e'
+_commit='b15be64bae7c3a0f9df735ac41b2f02eef3e78d3'
 pkgver=0.0.1
-pkgrel=02
+pkgrel=3
 pkgdesc='OpenVoiceOS Shell on EGLFS:
 	  This is a minimal shell which is intended 
 	  to run on low power hardware either as "single 
@@ -34,7 +34,7 @@ python-ovos-phal-plugin-wifi-setup
 makedepends=(pkgconf cmake extra-cmake-modules)
 
 source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz")
-sha256sums=('743862ed78d9e5d4a71740706f25e379468dedc5a94598dbc54b6c4273c94485')
+sha256sums=('d5d3770513a389b57710cc7d0ec7d779e66a5b66fabc64174afe8a114f90aee9')
 
 prepare() {
     cd "$srcdir"
