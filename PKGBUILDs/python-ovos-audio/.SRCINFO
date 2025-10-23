@@ -1,10 +1,10 @@
 pkgbase = python-ovos-audio
 	pkgdesc = The "mouth" of the OVOS assistant! Handles TTS generation and audio playback
-pkgver = 0.2.4
-pkgrel = 00
+	pkgver = 0.3.2
+	pkgrel = 1
 	url = https://github.com/OpenVoiceOS/ovos-audio/
 	arch = any
-	license = 
+	license = Apache
 	makedepends = python-build
 	makedepends = python-installer
 	makedepends = python-wheel
@@ -14,21 +14,36 @@ pkgrel = 00
 	depends = ovos-messagebus-server
 	depends = python
 	depends = python-sdnotify
-	depends = python-ovos-ocp-audio-plugin>=0.0.5a3
-	depends = python-ovos-bus-client>=0.0.3a4
-	depends = python-ovos-config>=0.0.8a2
 	depends = python-ovos-ocp-files-plugin
 	depends = python-ovos-ocp-m3u-plugin
 	depends = python-ovos-ocp-news-plugin
 	depends = python-ovos-ocp-rss-plugin
-	depends = python-ovos-plugin-manager>=0.0.23a4
-	depends = python-ovos-utils>=0.0.31a3
+	depends = python-ovos-bus-client>=0.0.8
+	depends = python-ovos-config>=0.0.12
+	depends = python-ovos-plugin-manager>=0.0.26
+	depends = python-ovos-utils>=0.0.38
+	optdepends = python-ovos-audio-plugin-mpv>=0.2.0
+	optdepends = python-ovos-audio-plugin-simple>=0.1.0
+	optdepends = python-ovos-media-plugin-chromecast>=0.1.0
+	optdepends = python-ovos-media-plugin-spotify>=0.2.3
+	optdepends = python-ovos-ocp-audio-plugin>=1.1.4
+	optdepends = python-ovos-tts-plugin-server>=0.0.2
 	provides = ovos-audio-messagebus
 	conflicts = ovos-audio-messagebus
-	source = https://github.com/OpenVoiceOS/ovos-audio/archive/3903c8cbb0072fc03a260020b5ef4e6e6b823377.tar.gz
+	conflicts = python-ovos-audio-plugin-mpv>=1.0.0
+	conflicts = python-ovos-audio-plugin-simple>=1.0.0
+	conflicts = python-ovos-bus-client>=2.0.0
+	conflicts = python-ovos-config>=2.0.0
+	conflicts = python-ovos-media-plugin-chromecast>=1.0.0
+	conflicts = python-ovos-media-plugin-spotify>=1.0.0
+	conflicts = python-ovos-ocp-audio-plugin>=2.0.0
+	conflicts = python-ovos-plugin-manager>=1.0.0
+	conflicts = python-ovos-tts-plugin-server>=1.0.0
+	conflicts = python-ovos-utils>=1.0.0
+	source = https://github.com/OpenVoiceOS/ovos-audio/archive/702d10dd010b0dce6c0f15d9d204afa86af99a57.tar.gz
 	source = ovos-audio-messagebus.service
 	source = ovos-systemd_audio_messagebus.py
-	sha256sums = e4da3c738a49896d0de8bc6eb4fdb5036a7e02962b0440862404b18c627a9a0a
+	sha256sums = 60da020c675ad0204c89dead109f52b495348c6d5737582293e23b8d7a608953
 	sha256sums = 4ba09ae7f8387473d4da2220bba02dcd1288b988d96949cb916e847ea8d55ea8
 	sha256sums = fd853f6345506ecb1ea81408ea34f8fec3f7701e0b576993ba23db85377859ee
 

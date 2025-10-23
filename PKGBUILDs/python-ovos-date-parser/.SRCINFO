@@ -1,0 +1,22 @@
+pkgbase = python-ovos-date-parser
+	pkgdesc = ovos-date-parser is a comprehensive library for multilingual date and time parsing, extraction, and formatting, designed to handle a range of human-readable date, time, and duration expressions.
+	pkgver = 0.6.5
+	pkgrel = 1
+	url = https://github.com/OpenVoiceOS/ovos-date-parser
+	arch = any
+	license = UNKNOWN
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-setuptools
+	depends = python
+	depends = python-quebra-frases>=0.3.7
+	depends = python-ovos-number-parser>=0.4.1
+	depends = python-dateutil>=2.6
+	depends = python-ovos-config
+	depends = python-dateparser
+	conflicts = python-ovos-number-parser>=1.0.0
+	source = https://github.com/OpenVoiceOS/ovos-date-parser/archive/refs/tags/0.6.5.tar.gz
+	sha256sums = bedc8b9ddde5ffd1e85778e55272f27395de388937d273bf50ca7427a950c240
+
+pkgname = python-ovos-date-parser

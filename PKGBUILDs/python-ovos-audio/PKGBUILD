@@ -3,8 +3,8 @@ _gh_proj=ovos-audio
 pkgname=python-ovos-audio
 _name=${pkgname#python-}
 _unit_name="ovos-audio-messagebus"
-_commit='8e51f38dfe481702d4fcbde1bfbb19ef15b88297'
-pkgver='0.2.4'
+_commit='702d10dd010b0dce6c0f15d9d204afa86af99a57'
+pkgver='0.3.2'
 pkgrel=1
 pkgdesc='The "mouth" of the OVOS assistant! Handles TTS generation and audio playback'
 arch=('any')
@@ -23,29 +23,29 @@ conflicts=("$_unit_name")
 
 #### Automatically generated dependencies. Do not edit.
 depends+=(
-'python-ovos-bus-client>=0.0.8' # ovos_bus_client<1.0.0,>=0.0.8
-'python-ovos-config>=0.0.12' # ovos-config<1.0.0,>=0.0.12
+'python-ovos-bus-client>=0.0.8' # ovos_bus_client<2.0.0,>=0.0.8
+'python-ovos-config>=0.0.12' # ovos-config<2.0.0,>=0.0.12
 'python-ovos-plugin-manager>=0.0.26' # ovos-plugin-manager<1.0.0,>=0.0.26
 'python-ovos-utils>=0.0.38' # ovos-utils<1.0.0,>=0.0.38
 )
 conflicts+=(
-'python-ovos-audio-plugin-mpv>=1.0.0' # ovos-audio-plugin-mpv<1.0.0,>=0.0.1; extra == "extras"
+'python-ovos-audio-plugin-mpv>=1.0.0' # ovos-audio-plugin-mpv<1.0.0,>=0.2.0; extra == "extras"
 'python-ovos-audio-plugin-simple>=1.0.0' # ovos_audio_plugin_simple<1.0.0,>=0.1.0; extra == "extras"
-'python-ovos-bus-client>=1.0.0' # ovos_bus_client<1.0.0,>=0.0.8
-'python-ovos-config>=1.0.0' # ovos-config<1.0.0,>=0.0.12
+'python-ovos-bus-client>=2.0.0' # ovos_bus_client<2.0.0,>=0.0.8
+'python-ovos-config>=2.0.0' # ovos-config<2.0.0,>=0.0.12
 'python-ovos-media-plugin-chromecast>=1.0.0' # ovos-media-plugin-chromecast<1.0.0,>=0.1.0; extra == "extras"
 'python-ovos-media-plugin-spotify>=1.0.0' # ovos-media-plugin-spotify<1.0.0,>=0.2.3; extra == "extras"
-'python-ovos-ocp-audio-plugin>=2.0.0' # ovos_plugin_common_play[extractors]<2.0.0,>=0.0.7; extra == "extras"
+'python-ovos-ocp-audio-plugin>=2.0.0' # ovos_plugin_common_play[extractors]<2.0.0,>=1.1.4; extra == "extras"
 'python-ovos-plugin-manager>=1.0.0' # ovos-plugin-manager<1.0.0,>=0.0.26
 'python-ovos-tts-plugin-server>=1.0.0' # ovos-tts-plugin-server<1.0.0,>=0.0.2; extra == "extras"
 'python-ovos-utils>=1.0.0' # ovos-utils<1.0.0,>=0.0.38
 )
 optdepends+=(
-'python-ovos-audio-plugin-mpv>=0.0.1' # ovos-audio-plugin-mpv<1.0.0,>=0.0.1; extra == "extras"
+'python-ovos-audio-plugin-mpv>=0.2.0' # ovos-audio-plugin-mpv<1.0.0,>=0.2.0; extra == "extras"
 'python-ovos-audio-plugin-simple>=0.1.0' # ovos_audio_plugin_simple<1.0.0,>=0.1.0; extra == "extras"
 'python-ovos-media-plugin-chromecast>=0.1.0' # ovos-media-plugin-chromecast<1.0.0,>=0.1.0; extra == "extras"
 'python-ovos-media-plugin-spotify>=0.2.3' # ovos-media-plugin-spotify<1.0.0,>=0.2.3; extra == "extras"
-'python-ovos-ocp-audio-plugin>=0.0.7' # ovos_plugin_common_play[extractors]<2.0.0,>=0.0.7; extra == "extras"
+'python-ovos-ocp-audio-plugin>=1.1.4' # ovos_plugin_common_play[extractors]<2.0.0,>=1.1.4; extra == "extras"
 'python-ovos-tts-plugin-server>=0.0.2' # ovos-tts-plugin-server<1.0.0,>=0.0.2; extra == "extras"
 )
 
@@ -55,7 +55,7 @@ source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz" \
     "ovos-systemd_audio_messagebus.py" \
     # "python-ovos-audio.install" \
 )
-sha256sums=('e4da3c738a49896d0de8bc6eb4fdb5036a7e02962b0440862404b18c627a9a0a'
+sha256sums=('60da020c675ad0204c89dead109f52b495348c6d5737582293e23b8d7a608953'
             '4ba09ae7f8387473d4da2220bba02dcd1288b988d96949cb916e847ea8d55ea8'
             'fd853f6345506ecb1ea81408ea34f8fec3f7701e0b576993ba23db85377859ee')
 
