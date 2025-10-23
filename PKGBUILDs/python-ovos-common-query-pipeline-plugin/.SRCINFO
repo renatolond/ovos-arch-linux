@@ -1,0 +1,24 @@
+pkgbase = ovos-common-query-pipeline-plugin
+	pkgdesc = The OVOS Common Query Framework is designed to answer questions by gathering answers from several skills and selecting the best one
+	pkgver = 1.1.7
+	pkgrel = 1
+	url = https://github.com/OpenVoiceOS/ovos-common-query-pipeline-plugin
+	arch = any
+	license = UNKNOWN
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-setuptools
+	depends = python
+	depends = python-ovos-plugin-manager>=0.5.0
+	depends = python-ovos-workshop>=0.1.7
+	depends = python-ovos-utils>=0.3.4
+	depends = python-ovos-bus-client
+	depends = python-ovos-config
+	conflicts = python-ovos-plugin-manager>=2.0.0
+	conflicts = python-ovos-workshop>=4.0.0
+	conflicts = python-ovos-utils>=1.0.0
+	source = https://github.com/OpenVoiceOS/ovos-common-query-pipeline-plugin/archive/refs/tags/1.1.7.tar.gz
+	sha256sums = f927e10a3307bfe1b54fb550e4055d63b830d726af9cf018a42e3ab2b0feb2da
+
+pkgname = ovos-common-query-pipeline-plugin
