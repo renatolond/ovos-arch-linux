@@ -2,8 +2,8 @@ _gh_org=OpenVoiceOS
 _gh_proj=ovos-bus-client
 pkgname=python-ovos-bus-client
 _name=${pkgname#python-}
-_commit='85205c67823e07a1f08180c795a32411058f182e'
-pkgver='0.0.10'
+_commit='05a02c0be5fcae1af401f2bd538690176467a156'
+pkgver='0.1.6'
 pkgrel=1
 pkgdesc='This module is a simple interface for the mycroft
 messagebus and can be used to connect to ovos, send
@@ -23,34 +23,32 @@ makedepends=(python-build python-installer python-wheel python-setuptools)
 depends+=(
 'python-orjson' # orjson
 'python-ovos-config>=0.0.12' # ovos-config<1.0.0,>=0.0.12
-'python-ovos-utils>=0.0.38' # ovos-utils<1.0.0,>=0.0.38
-'python-pyee>=8.1.0' # pyee<9.0.0,>=8.1.0
+'python-ovos-utils>=0.3.5' # ovos-utils<1.0.0,>=0.3.5
+'python-pyee>=8.1.0' # pyee<12.0.0,>=8.1.0
 'python-websocket-client>=0.54.0' # websocket-client>=0.54.0
 )
 conflicts+=(
 'python-ovos-config>=1.0.0' # ovos-config<1.0.0,>=0.0.12
-'python-ovos-utils>=1.0.0' # ovos-utils<1.0.0,>=0.0.38
-#'python-pyee>=9.0.0' # pyee<9.0.0,>=8.1.0
+'python-ovos-utils>=1.0.0' # ovos-utils<1.0.0,>=0.3.5
+'python-pyee>=12.0.0' # pyee<12.0.0,>=8.1.0
 )
 optdepends+=(
 
 )
 
 #### End of automatically generated dependencies.
-source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz" \
-   0001-Loosen-requirements.patch)
-sha256sums=('a1dfb640cb038b1de60e314d0e410f30b40df41ce208c75e70125aba13f6d93b'
-            '2c98f66426aa0075ebbbd14129afed4f7b97792f68904db0ecfc6d4aed27e91d')
+source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz")
+sha256sums=('10f16f6b8d4e99f719188270018527cd15dc71fa4cfede51d9d0790d88104a6f')
 
-prepare() {
-    cd "$srcdir"
-    for patch in "../"*.patch; do
-        if [ -f "$patch" ]; then
-          echo "Applying patch $patch"
-          patch --forward --strip=1 --input="${PWD}/${patch}" --directory="${srcdir}/${_name}-${_commit}"
-        fi
-    done
-}
+# prepare() {
+#     cd "$srcdir"
+#     for patch in "../"*.patch; do
+#         if [ -f "$patch" ]; then
+#           echo "Applying patch $patch"
+#           patch --forward --strip=1 --input="${PWD}/${patch}" --directory="${srcdir}/${_name}-${_commit}"
+#         fi
+#     done
+# }
 
 pkgver(){
     cd "$srcdir/$_name-$_commit"
