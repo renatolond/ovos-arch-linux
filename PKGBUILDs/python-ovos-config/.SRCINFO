@@ -1,7 +1,12 @@
 pkgbase = python-ovos-config
 	pkgdesc = helper package to interact with mycroft config
+<<<<<<< HEAD
 	pkgver = 0.2.1
 	pkgrel = 1
+=======
+pkgver = 0.4.3
+pkgrel = 00
+>>>>>>> renatolond/BUMP/python-ovos-config-0.4.3-fd6e347
 	url = https://github.com/OpenVoiceOS/ovos-config/
 	arch = any
 	license = Apache License 2.0
@@ -19,7 +24,12 @@ pkgbase = python-ovos-config
 	conflicts = python-ovos-backend-client>=2.0.0
 	conflicts = python-ovos-utils>=1.0.0
 	conflicts = python-yaml>=7.0.0
+<<<<<<< HEAD
 	source = https://github.com/OpenVoiceOS/ovos-config/archive/96d0d109c7da494a5c52ce4ca3e0497772269788.tar.gz
 	sha256sums = 82821e9fbd7459235dba84e60ecf841995ae6ff7861e696428132daa778ea29c
+=======
+	source = https://github.com/OpenVoiceOS/ovos-config/archive/b8642104954fe45ea11af5d7c5534c68e8b61f45.tar.gz
+	sha256sums = 91781a4140544dfba64a90132fe10f338da4b0cbaac8513c3c6bbbe9c1937268
+>>>>>>> renatolond/BUMP/python-ovos-config-0.4.3-fd6e347
 
 pkgname = python-ovos-config
