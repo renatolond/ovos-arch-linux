@@ -1,11 +1,11 @@
 pkgname=ovos-enclosure-audio-pulse
 pkgver='0.0.1'
-pkgrel=1
+pkgrel=2
 pkgdesc='Provides a system-wide daemonized PulseAudio instance. Use with embedded setups only'
 arch=('any')
 url='https://github.com/OpenVoiceOS/'
 license=('Apache License 2.0')
-depends=(pulseaudio pulseaudio-alsa pulseaudio-zeroconf)
+depends=(pulse-native-provider) #pulseaudio-alsa pulseaudio-zeroconf)
 optdepends=()
 makedepends=()
 install=pulseaudio.install
