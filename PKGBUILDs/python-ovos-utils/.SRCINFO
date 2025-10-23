@@ -1,6 +1,6 @@
 pkgbase = python-ovos-utils
 	pkgdesc = collection of simple utilities for use across the mycroft ecosystem
-	pkgver = 0.3.7
+	pkgver = 0.6.1
 	pkgrel = 1
 	url = https://github.com/OpenVoiceOS/ovos_utils/
 	arch = any
@@ -11,9 +11,8 @@ pkgbase = python-ovos-utils
 	makedepends = python-setuptools
 	depends = python
 	depends = python-combo-lock>=0.2
-	depends = python-json-database>=0.7
+	depends = python-json-database>=0.10
 	depends = python-kthread>=0.2
-	depends = python-langcodes
 	depends = python-orjson
 	depends = python-pexpect>=4.9
 	depends = python-pyee>=8.0.0
@@ -21,17 +20,16 @@ pkgbase = python-ovos-utils
 	depends = python-rich-click>=1.7
 	depends = python-rich>=13.7
 	depends = python-watchdog
+	optdepends = python-langcodes
+	optdepends = python-oauthlib>=3.2
 	optdepends = python-ovos-bus-client>=0.0.8
 	optdepends = python-ovos-config>=0.0.12
 	optdepends = python-ovos-plugin-manager>=0.0.25
 	optdepends = python-ovos-workshop>=0.0.13
 	optdepends = python-rapidfuzz>=3.6
-	conflicts = python-ovos-bus-client>=1.0.0
-	conflicts = python-ovos-config>=1.0.0
-	conflicts = python-ovos-plugin-manager>=1.0.0
-	conflicts = python-ovos-workshop>=3.0.0
+	optdepends = python-timezonefinder
 	conflicts = python-rapidfuzz>=4.0
-	source = https://github.com/OpenVoiceOS/ovos_utils/archive/2d9bdf8fe8efffb341b4e09a8b3e038ddd29a566.tar.gz
-	sha256sums = 5d55e7ef629f29b90f23105aa6ef1f0b23437905122e553515c888164e2d5103
+	source = https://github.com/OpenVoiceOS/ovos_utils/archive/d5ba67ffbb240bd642ab74c774accb54b019c559.tar.gz
+	sha256sums = a0d9b2635781c25ed8ac1f51204f05a924d1decfcb3a57323f50429d51eea2cd
 
 pkgname = python-ovos-utils

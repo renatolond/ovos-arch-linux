@@ -5,8 +5,8 @@ export PIP_DISABLE_PIP_VERSION_CHECK=true
 
 pkgname=python-json-database
 epoch=
-pkgver=0.7.0
-pkgrel=00
+pkgver=0.10.1
+pkgrel=1
 pkgdesc='searchable json database with persistence'
 arch=(any)
 url=https://github.com/OpenJarbas/json_database
@@ -20,8 +20,8 @@ conflicts=(${provides%=*})  # No quotes, to avoid an empty entry.
 source=(PKGBUILD_EXTRAS)
 md5sums=(SKIP)
 noextract=()
-source+=(https://files.pythonhosted.org/packages/ef/dc/6d6a6e4d4ab02dcd08a83344818c943799eb68b79619ff862e54c64a2c56/json_database-0.7.0.tar.gz)
-md5sums+=(cfc0952ea99cb2e6a59b289e2bf772ab)
+source+=(https://github.com/TigreGotico/json_database/archive/refs/tags/0.10.1.tar.gz)
+md5sums+=(669d19cc260e211658883d0073338328)
 source+=(LICENSE)
 md5sums+=(c72419962ba4980b7980b8d471b6a28b)
 
