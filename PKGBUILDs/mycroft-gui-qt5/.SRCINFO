@@ -1,7 +1,7 @@
 pkgbase = mycroft-gui-qt5
 	pkgdesc = OVOS fork of `mycroft-gui`, the KDE-based visual interface for working with Mycroft. This is the stable version based on Qt5.
 	pkgver = 1.0.1
-	pkgrel = 02
+	pkgrel = 3
 	url = https://github.com/OpenVoiceOS/mycroft-gui-qt5
 	arch = x86_64
 	arch = aarch64
@@ -25,9 +25,9 @@ pkgbase = mycroft-gui-qt5
 	optdepends = qt5-webview: webview support
 	provides = mycroft-gui
 	conflicts = mycroft-gui
-	source = https://github.com/OpenVoiceOS/mycroft-gui-qt5/archive/e3e87b22be62e009ff227a86d6e4731e4ad5a5d8.tar.gz
+	source = https://github.com/OpenVoiceOS/mycroft-gui-qt5/archive/44afca8622617e3e5fd3071b7c431cf8cc96f995.tar.gz
 	source = StatusIndicator.qml
-	sha256sums = 5b8f9a714141dee31902f4168fed1bca170dd2809b84d50686a177bc1ca2c0cc
+	sha256sums = 20b075281e885609aea31b29a4913e8db7930b4f363aea58fe859f6534e16cb1
 	sha256sums = 582f45a39cd79fed297213edaa89ab8a4d02d98271d4135103c997543569ea16
 
 pkgname = mycroft-gui-qt5
