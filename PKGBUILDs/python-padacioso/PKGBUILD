@@ -5,8 +5,8 @@ export PIP_DISABLE_PIP_VERSION_CHECK=true
 
 pkgname=python-padacioso
 epoch=
-pkgver='0.2.1'
-pkgrel=00
+pkgver='1.0.0'
+pkgrel=1
 pkgdesc='dead simple intent parser'
 arch=(any)
 url=https://github.com/OpenVoiceOS/padacioso
