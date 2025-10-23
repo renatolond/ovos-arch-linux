@@ -190,7 +190,7 @@ source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz"
     "ovos-skills.install" 
 )
 sha256sums=('550ab6fdb39c01d04815cefa84dc5aaa8271454b68beeb2f434dfc772c472d28'
-            '8a9491bfc586cb801d0b904205f8e4f98a23333d48a717dccc0e62c5949398ad'
+            'cbc74b4e8029986066f9ecfd738b12e79f8a6de8a910b88c8fb8dd0de6f5a02b'
             'bd403865bdadd82502beb861589da1e050d6885702b6b1a5f6911cdf2de4742a'
             '8835b79d49ac07c4822e9c397816e4e02631da65702a90e87359d205bde63f80')
 
