@@ -1,6 +1,6 @@
 pkgbase = python-ovos-ocp-audio-plugin
 	pkgdesc = OVOS GUI mediaplayer plugin
-	pkgver = 1.1.0
+	pkgver = 1.2.1
 	pkgrel = 1
 	url = https://github.com/OpenVoiceOS/ovos-ocp-audio-plugin/
 	arch = any
@@ -19,27 +19,28 @@ pkgbase = python-ovos-ocp-audio-plugin
 	depends = python-dbus-next
 	depends = python-ovos-bus-client>=0.0.7
 	depends = python-ovos-plugin-manager>=0.0.26
-	depends = python-ovos-utils>=0.0.38
-	depends = python-ovos-workshop>=0.0.16
+	depends = python-ovos-utils>=0.1.0
+	depends = python-ovos-workshop>=2.4.2
 	depends = python-padacioso>=0.1.1
 	optdepends = python-ovos-audio-plugin-simple>=0.0.1
 	optdepends = python-ovos-ocp-files-plugin>=0.13
 	optdepends = python-ovos-ocp-m3u-plugin>=0.0.1
-	optdepends = python-ovos-ocp-news-plugin>=0.0.3
+	optdepends = python-ovos-ocp-news-plugin>=0.1.0
 	optdepends = python-ovos-ocp-rss-plugin>=0.0.2
 	optdepends = python-ovos-ocp-youtube-plugin>=0.0.1
 	provides = python-ovos-plugin-common-play
 	provides = python-ovos-ocp-audio-plugin
 	conflicts = python-ovos-audio-plugin-simple>=1.0.0
-	conflicts = python-ovos-bus-client>=1.0.0
+	conflicts = python-ovos-bus-client>=2.0.0
 	conflicts = python-ovos-ocp-m3u-plugin>=1.0.0
 	conflicts = python-ovos-ocp-news-plugin>=1.0.0
 	conflicts = python-ovos-ocp-rss-plugin>=1.0.0
 	conflicts = python-ovos-ocp-youtube-plugin>=1.0.0
-	conflicts = python-ovos-plugin-manager>=1.0.0
+	conflicts = python-ovos-plugin-manager>=2.0.0
 	conflicts = python-ovos-utils>=1.0.0
-	conflicts = python-ovos-workshop>=1.0.0
-	source = https://github.com/OpenVoiceOS/ovos-ocp-audio-plugin/archive/8ceaa0a3ecadf5728a3c9a5f93ec41ce6c06cb09.tar.gz
-	sha256sums = 51613142a742164113bba0bbb73f3b77939ec78cf17155a88892ef177a87895b
+	conflicts = python-ovos-workshop>=8.0.0
+	conflicts = python-padacioso>=2.0.0
+	source = https://github.com/OpenVoiceOS/ovos-ocp-audio-plugin/archive/84a033bd727acba6f2916f0469def452015c950b.tar.gz
+	sha256sums = f05f1b1b552fbe2c6085e270c302f686dfe21e4a4038dee860382d34aa48af13
 
 pkgname = python-ovos-ocp-audio-plugin
