@@ -2,8 +2,8 @@ _gh_org=OpenVoiceOS
 _gh_proj=skill-ovos-homescreen
 pkgname=ovos-skill-official-homescreen
 _name=ovos-skill-homescreen
-_commit='7cb45483cfde4207298e41bd631ec57e27c0fa83'
-pkgver='1.0.5'
+_commit='8f7d93efb8c5bfb475114974b179376194c6bb8b'
+pkgver='3.0.2'
 pkgrel=1
 pkgdesc='OVOS Homescreen Skill
 Provides custom resting face for OVOS'
@@ -25,13 +25,13 @@ depends+=(
 'python-ovos-bus-client>=1.0.0' # ovos-bus-client<2.0.0,>=1.0.0
 'python-ovos-date-parser>=0.0.3' # ovos-date-parser<1.0.0,>=0.0.3
 'python-ovos-utils>=0.0.38' # ovos-utils<2.0.0,>=0.0.38
-'python-ovos-workshop>=0.0.15' # ovos-workshop<3.0.0,>=0.0.15
+'python-ovos-workshop>=2.4.0' # ovos-workshop<4.0.0,>=2.4.0
 )
 conflicts+=(
 'python-ovos-bus-client>=2.0.0' # ovos-bus-client<2.0.0,>=1.0.0
 'python-ovos-date-parser>=1.0.0' # ovos-date-parser<1.0.0,>=0.0.3
 'python-ovos-utils>=2.0.0' # ovos-utils<2.0.0,>=0.0.38
-'python-ovos-workshop>=3.0.0' # ovos-workshop<3.0.0,>=0.0.15
+'python-ovos-workshop>=4.0.0' # ovos-workshop<4.0.0,>=2.4.0
 )
 optdepends+=(
 
@@ -39,7 +39,7 @@ optdepends+=(
 
 #### End of automatically generated dependencies.
 source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz")
-sha256sums=('3abe310f4c9a22f0deab1327fa1eb0690e3978a64feb06302ca4c2f04ba98fd9')
+sha256sums=('6d66871013ecc490b857b46fb3419c2f4c0d2a60887753d6e328f18e369d55dc')
 
 prepare() {
     cd "$srcdir"

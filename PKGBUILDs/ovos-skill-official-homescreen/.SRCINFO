@@ -1,7 +1,7 @@
 pkgbase = ovos-skill-official-homescreen
 	pkgdesc = OVOS Homescreen Skill Provides custom resting face for OVOS
-pkgver = 1.0.5
-pkgrel = 00
+	pkgver = 3.0.2
+	pkgrel = 1
 	url = https://github.com/OpenVoiceOS/skill-ovos-homescreen/
 	arch = any
 	license = Apache License 2.0
@@ -10,16 +10,20 @@ pkgrel = 00
 	makedepends = python-wheel
 	makedepends = python-setuptools
 	depends = python
-	depends = python-ovos-utils>=0.0.28
-	depends = python-ovos-workshop>=0.0.11
 	depends = python-ovos-lingua-franca>=0.4.7
 	depends = python-ovos-phal-plugin-wallpaper-manager
 	depends = python-ovos-skill-manager
+	depends = python-ovos-bus-client>=1.0.0
+	depends = python-ovos-date-parser>=0.0.3
+	depends = python-ovos-utils>=0.0.38
+	depends = python-ovos-workshop>=2.4.0
 	provides = ovos-skill-official-homescreen
 	conflicts = ovos-skill-official-homescreen
-	source = https://github.com/OpenVoiceOS/skill-ovos-homescreen/archive/44119a39407cd3b14abf890d2e6244b422b862df.tar.gz
-	source = 0001-homescreen-update.patch
-	sha256sums = 417cd692d8052e19baf9e587123da123f5f4157cfe7fa1b9d618d8e45dfb4d14
-	sha256sums = 6667e2dd8de8d16f9a5b3d1bf626983678bff663aed5df84a48c4b2d1e672302
+	conflicts = python-ovos-bus-client>=2.0.0
+	conflicts = python-ovos-date-parser>=1.0.0
+	conflicts = python-ovos-utils>=2.0.0
+	conflicts = python-ovos-workshop>=4.0.0
+	source = https://github.com/OpenVoiceOS/skill-ovos-homescreen/archive/8f7d93efb8c5bfb475114974b179376194c6bb8b.tar.gz
+	sha256sums = 6d66871013ecc490b857b46fb3419c2f4c0d2a60887753d6e328f18e369d55dc
 
 pkgname = ovos-skill-official-homescreen
