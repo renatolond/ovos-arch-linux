@@ -1,0 +1,18 @@
+pkgbase = python-ovos-persona
+	pkgdesc = The PersonaPipeline brings multi-persona management to OpenVoiceOS (OVOS), enabling interactive conversations with virtual assistants. 🎙️ With personas, you can customize how queries are handled by assigning specific solvers to each persona.
+	pkgver = 0.6.4
+	pkgrel = 1
+	url = https://github.com/OpenVoiceOS/ovos-persona
+	arch = any
+	license = Apache
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-setuptools
+	depends = python
+	depends = python-ovos-plugin-manager>=0.8.3
+	conflicts = python-ovos-plugin-manager>=2.0.0
+	source = https://github.com/OpenVoiceOS/ovos-persona/archive/refs/tags/0.6.4.tar.gz
+	sha256sums = 61b694e8bc85904821235f932e963b81a49360229e1574b1a0ef155c0055cc41
+
+pkgname = python-ovos-persona
