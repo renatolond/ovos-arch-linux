@@ -1,6 +1,6 @@
 pkgbase = python-ovos-dinkum-listener
 	pkgdesc = The "ears" of the OVOS assistant! Listens for wakewords, performs VAD and STT, the final transcribed speech is then sent to ovos-core. Dinkum flavor
-	pkgver = 0.2.1
+	pkgver = 0.3.8
 	pkgrel = 1
 	url = https://github.com/OpenVoiceOS/ovos-dinkum-listener/
 	arch = any
@@ -15,14 +15,13 @@ pkgbase = python-ovos-dinkum-listener
 	depends = python
 	depends = python-sdnotify
 	depends = ovos-microphone-plugin
+	depends = python-ovos-backend-client>=0.0.6
 	depends = python-ovos-vad-plugin-webrtcvad
 	depends = python-ovos-bus-client>=0.0.10
-	depends = python-ovos-config>=0.2.1
+	depends = python-ovos-config>=0.4.3
 	depends = python-ovos-plugin-manager>=0.3.1
 	depends = python-ovos-utils>=0.0.38
 	depends = python-speechrecognition>=3.9
-	optdepends = python-onnxruntime
-	optdepends = python-ovos-backend-client>=0.1.0
 	optdepends = python-ovos-microphone-plugin-alsa>=0.0.0
 	optdepends = python-ovos-microphone-plugin-sounddevice>=0.0.0
 	optdepends = python-ovos-stt-plugin-chromium>=0.0.1
@@ -36,9 +35,9 @@ pkgbase = python-ovos-dinkum-listener
 	provides = ovos-listener-messagebus
 	conflicts = ovos-listener-messagebus
 	conflicts = python-ovos-listener
-	conflicts = python-ovos-backend-client>=2.0.0
-	conflicts = python-ovos-bus-client>=1.0.0
-	conflicts = python-ovos-config>=1.0.0
+	conflicts = python-onnxruntime>=1.20.1
+	conflicts = python-ovos-bus-client>=2.0.0
+	conflicts = python-ovos-config>=2.0.0
 	conflicts = python-ovos-microphone-plugin-alsa>=1.0.0
 	conflicts = python-ovos-microphone-plugin-sounddevice>=1.0.0
 	conflicts = python-ovos-plugin-manager>=1.0.0
@@ -52,10 +51,10 @@ pkgbase = python-ovos-dinkum-listener
 	conflicts = python-ovos-ww-plugin-precise-lite>=1.0.0
 	conflicts = python-ovos-ww-plugin-vosk>=1.0.0
 	replaces = python-ovos-listener
-	source = https://github.com/OpenVoiceOS/ovos-dinkum-listener/archive/6111971280a2d76b249663064cc61103ade3c972.tar.gz
+	source = https://github.com/OpenVoiceOS/ovos-dinkum-listener/archive/04a7b7c020daa884a8ad638a11868c7a941623ca.tar.gz
 	source = ovos-listener-messagebus.service
 	source = ovos-systemd_dinkum_listener_messagebus.py
-	sha256sums = 21a72fd66ba380e31f9fdf258c8dc974b39ceb0662df04ddad10b7cf5396a90f
+	sha256sums = 4a594a199de3fdefa748308b477fa7d00e417334d007df6c000bb5cfda24d291
 	sha256sums = 6d852114cd72b873a90690191c9db678ae7d06180fd61bd0a63315155bab093d
 	sha256sums = f6b682fbc4020f6573a9a9407b32ba59d369feba579dec8dd34816ceb01376cb
 
