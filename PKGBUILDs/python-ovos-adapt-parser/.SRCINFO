@@ -1,0 +1,24 @@
+pkgbase = python-ovos-adapt-parser
+	pkgdesc = A text-to-intent parsing framework.
+	pkgver = 1.0.8
+	pkgrel = 1
+	url = https://github.com/OpenVoiceOS/ovos-adapt-pipeline-plugin/tree/dev
+	arch = any
+	license = Apache
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-setuptools
+	depends = python
+	depends = python-ovos-plugin-manager>=0.5.0
+	depends = python-six>=1.10.0
+	depends = python-ovos-workshop>=0.1.7
+	depends = python-ovos-utils>=0.3.4
+	depends = python-langcodes
+	conflicts = python-ovos-plugin-manager>=2.0.0
+	conflicts = python-ovos-workshop>=8.0.0
+	conflicts = python-ovos-utils>=1.0.0
+	source = https://github.com/OpenVoiceOS/ovos-adapt-pipeline-plugin/archive/refs/tags/1.0.8.tar.gz
+	sha256sums = 4bfe131ae66a61f652bb5f00411b240c8141c9c3124691522ccdb9bccbf0c21e
+
+pkgname = python-ovos-adapt-parser
