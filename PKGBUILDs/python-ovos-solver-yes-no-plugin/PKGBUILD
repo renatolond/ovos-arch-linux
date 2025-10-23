@@ -1,67 +1,50 @@
-pkgname=python-ovos-workshop
 _gh_org=OpenVoiceOS
-_gh_proj=OVOS-workshop
-_name=ovos-workshop
-_commit='097ae6ad17f177c8fe13cda517cfdf4679a64c60'
-pkgver='3.3.4'
+_gh_proj=ovos-solver-YesNo-plugin
+pkgname=python-ovos-solver-yes-no-plugin
+_name=ovos-solver-YesNo-plugin
+_base_ver=0.2.11
+pkgver=0.2.11
 pkgrel=1
-pkgdesc='frameworks, templates and patches for the mycroft universe'
+pkgdesc='A simple tool to indicate whether a user answered "yes" or "no" to a yes/no prompt.'
 arch=('any')
-url='https://github.com/OpenVoiceOS/OVOS-workshop/'
-license=('Apache License 2.0')
+url='https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin'
+license=('UNKNOWN')
 depends=(python)
+conflicts=()
 makedepends=(python-build python-installer python-wheel python-setuptools)
+source=("https://github.com/$_gh_org/$_gh_proj/archive/refs/tags/$_base_ver.tar.gz")
+sha256sums=('89c76e111594dc4255006cc5ac36e5814ace80e4de1300bf598d289f7fc1035d')
 
-#### Automatically generated dependencies. Do not edit.
 depends+=(
-'python-langcodes' # langcodes
-'python-ovos-bus-client>=0.0.8' # ovos_bus_client<2.0.0,>=0.0.8
-'python-ovos-config>=0.0.12' # ovos-config<2.0.0,>=0.0.12
-'python-ovos-number-parser>=0.0.1' # ovos-number-parser<1.0.0,>=0.0.1
-'python-ovos-solver-yes-no-plugin>=0.0.1' # ovos-solver-yes-no-plugin<1.0.0,>=0.0.1
-'python-ovos-utils>=0.6.0' # ovos-utils<1.0.0,>=0.6.0
-'python-padacioso' # padacioso
-'python-rapidfuzz' # rapidfuzz
+'python-ovos-plugin-manager>=0.0.26' # ovos-plugin-manager>=0.0.26,<2.0.0
+'python-langcodes'
 )
 conflicts+=(
-'python-ovos-bus-client>=2.0.0' # ovos_bus_client<2.0.0,>=0.0.8
-'python-ovos-config>=2.0.0' # ovos-config<2.0.0,>=0.0.12
-'python-ovos-number-parser>=1.0.0' # ovos-number-parser<1.0.0,>=0.0.1
-'python-ovos-solver-yes-no-plugin>=1.0.0' # ovos-solver-yes-no-plugin<1.0.0,>=0.0.1
-'python-ovos-utils>=1.0.0' # ovos-utils<1.0.0,>=0.6.0
+'python-ovos-plugin-manager>=2.0.0' # ovos-plugin-manager>=0.0.26,<2.0.0
 )
-optdepends+=(
-'python-ovos-classifiers>=0.0.0a46' # ovos_classifiers>=0.0.0a46; extra == "ocp"
-'python-ovos-ocp-audio-plugin' # ovos_plugin_common_play; extra == "ocp"
-)
-
-#### End of automatically generated dependencies.
-source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz")
-sha256sums=('3aeac559e248a765dd8c55b552e355c0644ecc20bb808a7990e12afa73f3da8e')
-
 
 prepare() {
     cd "$srcdir"
     for patch in "../"*.patch; do
         if [ -f "$patch" ]; then
           echo "Applying patch $patch"
-          patch --forward --strip=1 --input="${PWD}/${patch}" --directory="${srcdir}/${_name}-${_commit}"
+          patch --forward --strip=1 --input="${PWD}/${patch}" --directory="${srcdir}/${_name}-${_base_ver}"
         fi
     done
 }
 
 pkgver(){
-    cd "$srcdir/$_name-$_commit"
+    cd "$srcdir/$_name-$_base_ver"
     echo "$(python setup.py --version)"
 }
 
 build() {
-    cd "$_name-$_commit"
+    cd "$_name-$_base_ver"
     python -m build --wheel --no-isolation
 }
 
 check() {
-    cd "$_name-$_commit"
+    cd "$_name-$_base_ver"
 
     local site_packages=$(python -c "import site; print(site.getsitepackages()[0])")
     local python_version=$(python -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')
@@ -71,7 +54,7 @@ check() {
 }
 
 package() {
-    cd "$_name-$_commit"
+    cd "$_name-$_base_ver"
 
     echo "Installing $pkgname to $pkgdir"
     # some packages produce multiple wheels, install the one specific to the version of the package
@@ -94,5 +77,3 @@ package() {
     find "$srcdir" -maxdepth 2 -type f -name 'LICENSE*' -exec cp -t "$pkgdir/usr/share/licenses/$pkgname" {} +
     find "$srcdir" -maxdepth 1 -type f -name 'COPYING*' -exec cp -t "$pkgdir/usr/share/licenses/$pkgname" {} +
 }
-
-

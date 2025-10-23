@@ -1,67 +1,47 @@
-pkgname=python-ovos-workshop
 _gh_org=OpenVoiceOS
-_gh_proj=OVOS-workshop
-_name=ovos-workshop
-_commit='097ae6ad17f177c8fe13cda517cfdf4679a64c60'
-pkgver='3.3.4'
+_gh_proj=ovos-number-parser
+pkgname=python-ovos-number-parser
+_name=ovos-number-parser
+_base_ver=0.5.1
+pkgver=0.5.1
 pkgrel=1
-pkgdesc='frameworks, templates and patches for the mycroft universe'
+pkgdesc='OVOS Number Parser is a tool for extracting, pronouncing, and detecting numbers from text across multiple languages. It supports functionalities like converting numbers to their spoken forms, extracting numbers from text, identifying fractional and ordinal numbers, and more.'
 arch=('any')
-url='https://github.com/OpenVoiceOS/OVOS-workshop/'
-license=('Apache License 2.0')
+url='https://github.com/OpenVoiceOS/ovos-number-parser'
+license=('UNKNOWN')
 depends=(python)
+conflicts=()
 makedepends=(python-build python-installer python-wheel python-setuptools)
+source=("https://github.com/$_gh_org/$_gh_proj/archive/refs/tags/$_base_ver.tar.gz")
+sha256sums=('c18f1292c7f81a6118825c18ea0bdb0bc284c37882e772178664fb7346bf326a')
 
-#### Automatically generated dependencies. Do not edit.
 depends+=(
-'python-langcodes' # langcodes
-'python-ovos-bus-client>=0.0.8' # ovos_bus_client<2.0.0,>=0.0.8
-'python-ovos-config>=0.0.12' # ovos-config<2.0.0,>=0.0.12
-'python-ovos-number-parser>=0.0.1' # ovos-number-parser<1.0.0,>=0.0.1
-'python-ovos-solver-yes-no-plugin>=0.0.1' # ovos-solver-yes-no-plugin<1.0.0,>=0.0.1
-'python-ovos-utils>=0.6.0' # ovos-utils<1.0.0,>=0.6.0
-'python-padacioso' # padacioso
-'python-rapidfuzz' # rapidfuzz
+'python-quebra-frases>=0.3.7' # quebra_frases>=0.3.7
+'python-unicode-rbnf'
 )
-conflicts+=(
-'python-ovos-bus-client>=2.0.0' # ovos_bus_client<2.0.0,>=0.0.8
-'python-ovos-config>=2.0.0' # ovos-config<2.0.0,>=0.0.12
-'python-ovos-number-parser>=1.0.0' # ovos-number-parser<1.0.0,>=0.0.1
-'python-ovos-solver-yes-no-plugin>=1.0.0' # ovos-solver-yes-no-plugin<1.0.0,>=0.0.1
-'python-ovos-utils>=1.0.0' # ovos-utils<1.0.0,>=0.6.0
-)
-optdepends+=(
-'python-ovos-classifiers>=0.0.0a46' # ovos_classifiers>=0.0.0a46; extra == "ocp"
-'python-ovos-ocp-audio-plugin' # ovos_plugin_common_play; extra == "ocp"
-)
-
-#### End of automatically generated dependencies.
-source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz")
-sha256sums=('3aeac559e248a765dd8c55b552e355c0644ecc20bb808a7990e12afa73f3da8e')
-
 
 prepare() {
     cd "$srcdir"
     for patch in "../"*.patch; do
         if [ -f "$patch" ]; then
           echo "Applying patch $patch"
-          patch --forward --strip=1 --input="${PWD}/${patch}" --directory="${srcdir}/${_name}-${_commit}"
+          patch --forward --strip=1 --input="${PWD}/${patch}" --directory="${srcdir}/${_name}-${_base_ver}"
         fi
     done
 }
 
 pkgver(){
-    cd "$srcdir/$_name-$_commit"
+    cd "$srcdir/$_name-$_base_ver"
     echo "$(python setup.py --version)"
 }
 
 build() {
-    cd "$_name-$_commit"
+    cd "$_name-$_base_ver"
     python -m build --wheel --no-isolation
 }
 
 check() {
-    cd "$_name-$_commit"
+    cd "$_name-$_base_ver"
 
     local site_packages=$(python -c "import site; print(site.getsitepackages()[0])")
     local python_version=$(python -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')
@@ -71,7 +51,7 @@ check() {
 }
 
 package() {
-    cd "$_name-$_commit"
+    cd "$_name-$_base_ver"
 
     echo "Installing $pkgname to $pkgdir"
     # some packages produce multiple wheels, install the one specific to the version of the package
@@ -83,7 +63,7 @@ package() {
         cp -r "$srcdir/$pkgname/docs" "$pkgdir/usr/share/doc/$pkgname" || true
         chmod 644 "$pkgdir/usr/share/doc/$pkgname"/*.txt  || true # Set read permissions for documentation files
     fi
-    
+
     # Optional: Remove unused files or directories
     # For example, removing unneeded binaries, license files, etc.
     # rm "$pkgdir/usr/bin/unneeded_binary"  # Remove unneeded binary
@@ -94,5 +74,3 @@ package() {
     find "$srcdir" -maxdepth 2 -type f -name 'LICENSE*' -exec cp -t "$pkgdir/usr/share/licenses/$pkgname" {} +
     find "$srcdir" -maxdepth 1 -type f -name 'COPYING*' -exec cp -t "$pkgdir/usr/share/licenses/$pkgname" {} +
 }
-
-

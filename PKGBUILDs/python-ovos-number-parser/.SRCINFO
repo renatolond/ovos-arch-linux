@@ -1,0 +1,18 @@
+pkgbase = python-ovos-number-parser
+	pkgdesc = OVOS Number Parser is a tool for extracting, pronouncing, and detecting numbers from text across multiple languages. It supports functionalities like converting numbers to their spoken forms, extracting numbers from text, identifying fractional and ordinal numbers, and more.
+	pkgver = 0.5.1
+	pkgrel = 1
+	url = https://github.com/OpenVoiceOS/ovos-number-parser
+	arch = any
+	license = UNKNOWN
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-setuptools
+	depends = python
+	depends = python-quebra-frases>=0.3.7
+	depends = python-unicode-rbnf
+	source = https://github.com/OpenVoiceOS/ovos-number-parser/archive/refs/tags/0.5.1.tar.gz
+	sha256sums = c18f1292c7f81a6118825c18ea0bdb0bc284c37882e772178664fb7346bf326a
+
+pkgname = python-ovos-number-parser

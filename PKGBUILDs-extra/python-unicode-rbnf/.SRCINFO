@@ -1,0 +1,16 @@
+pkgbase = python-unicode-rbnf
+	pkgdesc = A pure Python implementation of rule based number formatting (RBNF) using the Unicode Common Locale Data Repository (CLDR).
+	pkgver = 2.4.0
+	pkgrel = 1
+	url = https://github.com/rhasspy/unicode-rbnf
+	arch = any
+	license = custom:MIT
+	depends = python
+	source = PKGBUILD_EXTRAS
+	source = https://files.pythonhosted.org/packages/57/1f/d952ba97832647e608700c36b22d1c4476016076c9ed1ce74ae814bea55a/unicode_rbnf-2.4.0.tar.gz
+	source = LICENSE
+	md5sums = SKIP
+	md5sums = c2f0d56cc18fa79f064fd58f17ecdb00
+	md5sums = c72419962ba4980b7980b8d471b6a28b
+
+pkgname = python-unicode-rbnf

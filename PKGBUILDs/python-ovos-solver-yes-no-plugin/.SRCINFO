@@ -1,0 +1,19 @@
+pkgbase = python-ovos-solver-yes-no-plugin
+	pkgdesc = A simple tool to indicate whether a user answered "yes" or "no" to a yes/no prompt.
+	pkgver = 0.2.11
+	pkgrel = 1
+	url = https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin
+	arch = any
+	license = UNKNOWN
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-setuptools
+	depends = python
+	depends = python-ovos-plugin-manager>=0.0.26
+	depends = python-langcodes
+	conflicts = python-ovos-plugin-manager>=2.0.0
+	source = https://github.com/OpenVoiceOS/ovos-solver-YesNo-plugin/archive/refs/tags/0.2.11.tar.gz
+	sha256sums = 89c76e111594dc4255006cc5ac36e5814ace80e4de1300bf598d289f7fc1035d
+
+pkgname = python-ovos-solver-yes-no-plugin
