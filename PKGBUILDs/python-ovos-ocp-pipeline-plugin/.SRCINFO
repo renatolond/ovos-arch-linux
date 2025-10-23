@@ -1,0 +1,23 @@
+pkgbase = python-ovos-ocp-pipeline-plugin
+	pkgdesc = OVOS plugin for specialized media handling
+	pkgver = 1.1.14
+	pkgrel = 1
+	url = https://github.com/OpenVoiceOS/ovos-ocp-pipeline-plugin
+	arch = any
+	license = UNKNOWN
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-setuptools
+	depends = python
+	depends = python-ovos-plugin-manager>=0.5.0
+	depends = python-ovos-workshop>=0.1.7
+	depends = python-ovos-utils>=0.3.5
+	depends = python-ovos-classifiers
+	conflicts = python-ovos-plugin-manager>=1.0.0
+	conflicts = python-ovos-workshop>=4.0.0
+	conflicts = python-ovos-utils>=1.0.0
+	source = https://github.com/OpenVoiceOS/ovos-ocp-pipeline-plugin/archive/refs/tags/1.1.14.tar.gz
+	sha256sums = d8baf4dde9c22a6c721b438e3ebf7725b4f16bd413598fea40e3960106cfe1b7
+
+pkgname = python-ovos-ocp-pipeline-plugin
