@@ -5,7 +5,7 @@ _name=ovos-gui
 _unit_name="ovos-gui-messagebus"
 _commit='637130b6bdf5f376e4670d3787d79cd62da1db5a'
 pkgver='1.3.3'
-pkgrel=1
+pkgrel=2
 pkgdesc='GUI messagebus service, manages GUI state and implements the gui protocol'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-gui/'
@@ -42,7 +42,7 @@ source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz" \
     )
 sha256sums=('1ff40053196b4db6a0884dbda8b85c7d76369f2783e32a73e3336513754e440b'
             'b8418c1ba00a7ee9fb28a0a188a0ea7e39cbc5dfbfd21e3715797dfef23e78a9'
-            '91183c0c107817a3e95a17dc3a68dbc2b84341373c645d762b1e2bc2f10dbbc9')
+            'bf8ec7c21c4770bf2e95e879a63e1728ff9269731981b29d1b9a1bdca2ce1709')
 
 prepare() {
     cd "$srcdir"

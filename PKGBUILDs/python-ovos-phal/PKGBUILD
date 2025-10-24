@@ -5,7 +5,7 @@ _name=ovos-PHAL
 _unit_name="ovos-phal-messagebus"
 _commit='7088e65c4b829fad133d6db840b207fa5e9c6b47'
 pkgver='0.2.9'
-pkgrel=1
+pkgrel=2
 pkgdesc='OVOS-PHAL'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos_PHAL/'
@@ -74,8 +74,8 @@ source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz" \
 sha256sums=('720fd01796dbad3f115dfe1ccfb1d9c67482c482c71a1cb3e39c7cab6e433829'
             '134283f2448d53d9d7b8d977044525b56ff5571e655aaaa3aea3e3e2d2c1ec2f'
             '4337ab11d89f70bdb2d428e03505d19d42e35652c8c21dfb55d7bb2d3764bbb6'
-            '2c920defb96d86406d30890da1262520d575b54ad9c830e3b5ad00c88456c4bf'
-            '846378e2d1153dbcd40b77195d1114d4f79819b83785e24f9f17662395ea0958')
+            '55450b769de2fb12058c3b63002dfe9351b1ed3709878112b2f005e222d866f8'
+            'fe90f1efe2cfa69993e23e002189a479a58640cfb0f91fac7623d1727ab8e000')
 
 prepare() {
     cd "$srcdir"

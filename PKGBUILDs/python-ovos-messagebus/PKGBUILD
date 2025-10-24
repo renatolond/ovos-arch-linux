@@ -5,7 +5,7 @@ _name=ovos-messagebus
 _unit_name="ovos-messagebus"
 _commit='7a99a8e740fadcfd040b114437f1ec3b6efd63c2'
 pkgver='0.0.10'
-pkgrel=1
+pkgrel=2
 pkgdesc='messagebus service, the nervous system of OpenVoiceOS'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-messagebus/'
@@ -40,7 +40,7 @@ source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz" \
     "python-$_unit_name.install")
 sha256sums=('0fbc5f7a79d4c15fc67c32aa314b54c8b0299f54c5696f509417c6be34d86197'
             '423ede875cf62963fbd8ed4103624c6347b00ce185027ebde54e31a6d1fa59bf'
-            'f1732d6858fd0c74e91304e92db30b0ee4a9c4a3e32d98d97bf3564a8197c685'
+            'eedfcd7b3e82fefa15f19b395e58724209a3f35b1c9e9c896fb8f851a6c7e4d5'
             'd2208a11d02faee1acf63a0f5b871a41b7005eb26f86a56552c6425b918409fa')
 
 prepare() {

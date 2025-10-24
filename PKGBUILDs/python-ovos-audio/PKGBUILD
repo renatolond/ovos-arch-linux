@@ -5,7 +5,7 @@ _name=${pkgname#python-}
 _unit_name="ovos-audio-messagebus"
 _commit='702d10dd010b0dce6c0f15d9d204afa86af99a57'
 pkgver='0.3.2'
-pkgrel=1
+pkgrel=2
 pkgdesc='The "mouth" of the OVOS assistant! Handles TTS generation and audio playback'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-audio/'
@@ -57,7 +57,7 @@ source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz" \
 )
 sha256sums=('60da020c675ad0204c89dead109f52b495348c6d5737582293e23b8d7a608953'
             '4ba09ae7f8387473d4da2220bba02dcd1288b988d96949cb916e847ea8d55ea8'
-            'fd853f6345506ecb1ea81408ea34f8fec3f7701e0b576993ba23db85377859ee')
+            'c9dc59cdc8154f0b6b9cf6de73a0cab10e9bd88004019f452e9995806ed7fe0d')
 
 prepare() {
     cd "$srcdir"

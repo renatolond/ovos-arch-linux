@@ -5,7 +5,7 @@ _name=ovos-core
 _unit_name_skills="ovos-skills-messagebus"
 _commit='f7baf562e19d9f527f4eed2744c11b148933793a'
 pkgver='1.1.0'
-pkgrel=1
+pkgrel=2
 pkgdesc='OVOS-core is a backwards-compatible descendant of
 Mycroft-core, the central component of Mycroft'
 arch=('any')
@@ -172,7 +172,7 @@ source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz"
 )
 sha256sums=('8bc3ebac109ce45e30451f3cb0976c0af2d9c258d962a0248e631f565e5fe6f6'
             'cbc74b4e8029986066f9ecfd738b12e79f8a6de8a910b88c8fb8dd0de6f5a02b'
-            'bd403865bdadd82502beb861589da1e050d6885702b6b1a5f6911cdf2de4742a'
+            'd63df30a34fd069116947d67e7cd9f6b81ccd9f4190d8759b4be5a285b1f9cff'
             '8835b79d49ac07c4822e9c397816e4e02631da65702a90e87359d205bde63f80')
 
 prepare() {

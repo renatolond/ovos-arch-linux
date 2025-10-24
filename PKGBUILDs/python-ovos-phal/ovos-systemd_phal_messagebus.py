@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 ##########################################################################
-# mycroft-systemd_enclosure.py
+# ovos-systemd_enclosure.py
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,12 +19,15 @@ from ovos_PHAL.__main__ import main
 
 n = sdnotify.SystemdNotifier()
 
+
 def notify_ready():
     n.notify('READY=1')
-    print('Startup of Mycroft Enclosure Client service complete')
+    print('Startup of OVOS PHAL service complete')
+
 
 def notify_stopping():
     n.notify('STOPPING=1')
-    print('Stopping the Mycroft Enclosure Client service')
+    print('Stopping the OVOS PHAL service')
+
 
 main(ready_hook=notify_ready, stopping_hook=notify_stopping)

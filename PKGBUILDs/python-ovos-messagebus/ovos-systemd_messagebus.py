@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 ##########################################################################
-# mycroft-systemd_messagebus.py
+# ovos-systemd_messagebus.py
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,16 +15,19 @@
 # limitations under the License.
 ##########################################################################
 import sdnotify
-from mycroft.messagebus.service.__main__ import main
+from ovos_messagebus.__main__ import main
 
 n = sdnotify.SystemdNotifier()
+
 
 def notify_ready():
     n.notify('READY=1')
     print('Startup of OVOS Messagebus service complete')
 
+
 def notify_stopping():
     n.notify('STOPPING=1')
     print('Stopping the OVOS Messagebus service')
+
 
 main(ready_hook=notify_ready, stopping_hook=notify_stopping)
