@@ -3,16 +3,15 @@ _gh_proj=ovos-core
 pkgname=python-ovos-core
 _name=ovos-core
 _unit_name_skills="ovos-skills-messagebus"
-_commit='22bb9565bfd74fe3a359fc87fc9fd964b8ffc124'
-pkgver='0.5.4'
+_commit='f7baf562e19d9f527f4eed2744c11b148933793a'
+pkgver='1.1.0'
 pkgrel=1
 pkgdesc='OVOS-core is a backwards-compatible descendant of
 Mycroft-core, the central component of Mycroft'
 arch=('any')
 url='https://github.com/OpenVoiceOS/ovos-core/'
 license=('Apache')
-depends=('ovos-service-base' 'ovos-messagebus-server' 'python' 'python-sdnotify' \
-)
+depends=('ovos-service-base' 'ovos-messagebus-server' 'python' 'python-sdnotify')
 makedepends=(python-build python-installer python-wheel python-setuptools)
 provides=("$_unit_name_skills")
 conflicts+=("$_unit_name_skills")
@@ -41,7 +40,6 @@ conflicts+=(
 'python-fann2>=1.1.0' # fann2<1.1.0,>=1.0.7; extra == "lgpl"
 'python-ovos-adapt-parser>=2.0.0' # ovos-adapt-parser<2.0.0,>=1.0.5
 'python-ovos-audio>=1.0.0' # ovos-audio[extras]<1.0.0,>=0.3.1; extra == "mycroft"
-'python-ovos-backend-client>=2.0.0' # ovos-backend-client<2.0.0,>=0.1.0; extra == "deprecated"
 'python-ovos-bidirectional-translation-plugin>=1.0.0' # ovos-bidirectional-translation-plugin<1.0.0,>=0.1.0; extra == "plugins"
 'python-ovos-bus-client>=2.0.0' # ovos_bus_client<2.0.0,>=0.1.4
 'python-ovos-common-query-pipeline-plugin>=2.0.0' # ovos-common-query-pipeline-plugin<2.0.0,>=1.0.5
@@ -49,8 +47,6 @@ conflicts+=(
 'python-ovos-date-parser>=1.0.0' # ovos-date-parser<1.0.0,>=0.0.3; extra == "plugins"
 'python-ovos-dinkum-listener>=1.0.0' # ovos-dinkum-listener[extras]<1.0.0,>=0.3.2; extra == "mycroft"
 'python-ovos-gui>=2.0.0' # ovos-gui[extras]<2.0.0,>=0.2.2; extra == "mycroft"
-'python-ovos-lingua-franca>=1.0.0' # ovos-lingua-franca<1.0.0,>=0.4.7; extra == "deprecated"
-'python-ovos-listener>=1.0.0' # ovos-listener<1.0.0,>=0.0.3; extra == "deprecated"
 'python-ovos-messagebus>=1.0.0' # ovos-messagebus<1.0.0,>=0.0.7; extra == "mycroft"
 'python-ovos-number-parser>=1.0.0' # ovos-number-parser<1.0.0,>=0.0.1; extra == "plugins"
 'python-ovos-ocp-pipeline-plugin>=2.0.0' # ovos_ocp_pipeline_plugin<2.0.0,>=1.0.10
@@ -93,15 +89,13 @@ conflicts+=(
 'python-ovos-skill-weather>=1.0.0' # ovos-skill-weather<1.0.0,>=0.1.11; extra == "skills-internet"
 'python-ovos-skill-wikihow>=1.0.0' # ovos-skill-wikihow<1.0.0,>=0.2.5; extra == "skills-internet"
 'python-ovos-skill-wikipedia>=1.0.0' # ovos-skill-wikipedia<1.0.0,>=0.5.3; extra == "skills-internet"
+'python-ovos-skill-youtube-music>=1.0.0' # ovos-skill-youtube-music<1.0.0,>=0.1.6; extra == "skills-media"
 'python-ovos-translate-server-plugin>=1.0.0' # ovos-translate-server-plugin<1.0.0,>=0.0.2; extra == "plugins"
-'python-ovos-tts-plugin-mimic>=1.0.0' # ovos-tts-plugin-mimic<1.0.0,>=0.2.8; extra == "deprecated"
 'python-ovos-utils>=1.0.0' # ovos-utils[extras]<1.0.0,>=0.6.0
 'python-ovos-utterance-corrections-plugin>=1.0.0' # ovos-utterance-corrections-plugin<1.0.0,>=0.0.2; extra == "plugins"
 'python-ovos-utterance-normalizer>=1.0.0' # ovos-utterance-normalizer<1.0.0,>=0.2.1; extra == "plugins"
 'python-ovos-utterance-plugin-cancel>=1.0.0' # ovos-utterance-plugin-cancel<1.0.0,>=0.2.3; extra == "plugins"
 'python-ovos-workshop>=4.0.0' # ovos-workshop<4.0.0,>=3.3.4
-'python-ovos-ww-plugin-pocketsphinx>=1.0.0' # ovos-ww-plugin-pocketsphinx<1.0.0,>=0.1; extra == "deprecated"
-'python-ovos-ww-plugin-precise>=1.0.0' # ovos-ww-plugin-precise<1.0.0,>=0.1; extra == "deprecated"
 'python-padacioso>=2.0.0' # padacioso<2.0.0,>=1.0.0
 'python-requests>=3.0' # requests<3.0,>=2.26
 'python-skill-ddg>=1.0.0' # skill-ddg<1.0.0,>=0.1.9; extra == "skills-internet"
@@ -112,19 +106,12 @@ conflicts+=(
 )
 optdepends+=(
 'python-fann2>=1.0.7' # fann2<1.1.0,>=1.0.7; extra == "lgpl"
-'python-mock-msm>=0.9' # mock_msm>=0.9; extra == "deprecated"
-'python-msm' # msm; extra == "deprecated"
-'python-mycroft-messagebus-client' # mycroft-messagebus-client; extra == "deprecated"
 'python-ovos-audio>=0.3.1' # ovos-audio[extras]<1.0.0,>=0.3.1; extra == "mycroft"
-'python-ovos-backend-client>=0.1.0' # ovos-backend-client<2.0.0,>=0.1.0; extra == "deprecated"
 'python-ovos-bidirectional-translation-plugin>=0.1.0' # ovos-bidirectional-translation-plugin<1.0.0,>=0.1.0; extra == "plugins"
 'python-ovos-classifiers' # ovos-classifiers; extra == "plugins"
-'python-ovos-cli-client' # ovos_cli_client; extra == "deprecated"
 'python-ovos-date-parser>=0.0.3' # ovos-date-parser<1.0.0,>=0.0.3; extra == "plugins"
 'python-ovos-dinkum-listener>=0.3.2' # ovos-dinkum-listener[extras]<1.0.0,>=0.3.2; extra == "mycroft"
 'python-ovos-gui>=0.2.2' # ovos-gui[extras]<2.0.0,>=0.2.2; extra == "mycroft"
-'python-ovos-lingua-franca>=0.4.7' # ovos-lingua-franca<1.0.0,>=0.4.7; extra == "deprecated"
-'python-ovos-listener>=0.0.3' # ovos-listener<1.0.0,>=0.0.3; extra == "deprecated"
 'python-ovos-messagebus>=0.0.7' # ovos-messagebus<1.0.0,>=0.0.7; extra == "mycroft"
 'python-ovos-number-parser>=0.0.1' # ovos-number-parser<1.0.0,>=0.0.1; extra == "plugins"
 'python-ovos-padatious>=1.1.0' # ovos_padatious<2.0.0,>=1.1.0; extra == "lgpl"
@@ -139,6 +126,7 @@ optdepends+=(
 'python-ovos-skill-confucius-quotes>=0.1.7' # ovos-skill-confucius-quotes<1.0.0,>=0.1.7; extra == "skills-extra"
 'python-ovos-skill-date-time>=0.4.2' # ovos-skill-date-time<1.0.0,>=0.4.2; extra == "skills-essential"
 'python-ovos-skill-days-in-history>=0.3.6' # ovos-skill-days-in-history<1.0.0,>=0.3.6; extra == "skills-extra"
+'python-ovos-skill-diagnostics>=0.0.2' # ovos-skill-diagnostics<1.0.0,>=0.0.2; extra == "skills-essential"
 'python-ovos-skill-dictation>=0.2.5' # ovos-skill-dictation<1.0.0,>=0.2.5; extra == "skills-audio"
 'python-ovos-skill-fallback-unknown>=0.1.5' # ovos-skill-fallback-unknown<1.0.0,>=0.1.5; extra == "skills-essential"
 'python-ovos-skill-hello-world>=0.1.10' # ovos-skill-hello-world<1.0.0,>=0.1.10; extra == "skills-essential"
@@ -165,22 +153,15 @@ optdepends+=(
 'python-ovos-skill-weather>=0.1.11' # ovos-skill-weather<1.0.0,>=0.1.11; extra == "skills-internet"
 'python-ovos-skill-wikihow>=0.2.5' # ovos-skill-wikihow<1.0.0,>=0.2.5; extra == "skills-internet"
 'python-ovos-skill-wikipedia>=0.5.3' # ovos-skill-wikipedia<1.0.0,>=0.5.3; extra == "skills-internet"
+'python-ovos-skill-youtube-music>=0.1.6' # ovos-skill-youtube-music<1.0.0,>=0.1.6; extra == "skills-media"
 'python-ovos-translate-server-plugin>=0.0.2' # ovos-translate-server-plugin<1.0.0,>=0.0.2; extra == "plugins"
-'python-ovos-tts-plugin-mimic>=0.2.8' # ovos-tts-plugin-mimic<1.0.0,>=0.2.8; extra == "deprecated"
 'python-ovos-utterance-corrections-plugin>=0.0.2' # ovos-utterance-corrections-plugin<1.0.0,>=0.0.2; extra == "plugins"
 'python-ovos-utterance-normalizer>=0.2.1' # ovos-utterance-normalizer<1.0.0,>=0.2.1; extra == "plugins"
 'python-ovos-utterance-plugin-cancel>=0.2.3' # ovos-utterance-plugin-cancel<1.0.0,>=0.2.3; extra == "plugins"
-'python-ovos-ww-plugin-pocketsphinx>=0.1' # ovos-ww-plugin-pocketsphinx<1.0.0,>=0.1; extra == "deprecated"
-'python-ovos-ww-plugin-precise>=0.1' # ovos-ww-plugin-precise<1.0.0,>=0.1; extra == "deprecated"
-'python-pillow>=8.3' # pillow>=8.3; extra == "deprecated"
-'python-pyalsaaudio>=0.8' # pyalsaaudio>=0.8; extra == "deprecated"
-'python-pyaudio' # pyaudio; extra == "deprecated"
-'python-pyserial>=3.0' # pyserial>=3.0; extra == "deprecated"
 'python-skill-ddg>=0.1.9' # skill-ddg<1.0.0,>=0.1.9; extra == "skills-internet"
 'python-skill-news>=0.1.8' # skill-news<1.0.0,>=0.1.8; extra == "skills-media"
 'python-skill-wolfie>=0.2.9' # skill-wolfie<1.0.0,>=0.2.9; extra == "skills-internet"
 'python-skill-wordnet>=0.0.10' # skill-wordnet<1.0.0,>=0.0.10; extra == "skills-extra"
-'python-vlc>=1.1.2' # python-vlc>=1.1.2; extra == "deprecated"
 )
 
 #### End of automatically generated dependencies.
@@ -189,7 +170,7 @@ source=("https://github.com/$_gh_org/$_gh_proj/archive/$_commit.tar.gz"
     "ovos-systemd_skills_messagebus.py"
     "ovos-skills.install" 
 )
-sha256sums=('550ab6fdb39c01d04815cefa84dc5aaa8271454b68beeb2f434dfc772c472d28'
+sha256sums=('8bc3ebac109ce45e30451f3cb0976c0af2d9c258d962a0248e631f565e5fe6f6'
             'cbc74b4e8029986066f9ecfd738b12e79f8a6de8a910b88c8fb8dd0de6f5a02b'
             'bd403865bdadd82502beb861589da1e050d6885702b6b1a5f6911cdf2de4742a'
             '8835b79d49ac07c4822e9c397816e4e02631da65702a90e87359d205bde63f80')

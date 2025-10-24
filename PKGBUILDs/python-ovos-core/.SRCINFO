@@ -1,6 +1,6 @@
 pkgbase = python-ovos-core
 	pkgdesc = OVOS-core is a backwards-compatible descendant of Mycroft-core, the central component of Mycroft
-	pkgver = 0.5.4
+	pkgver = 1.1.0
 	pkgrel = 1
 	url = https://github.com/OpenVoiceOS/ovos-core/
 	install = ovos-skills.install
@@ -29,19 +29,12 @@ pkgbase = python-ovos-core
 	depends = python-requests>=2.26
 	depends = python-watchdog>=2.1
 	optdepends = python-fann2>=1.0.7
-	optdepends = python-mock-msm>=0.9
-	optdepends = python-msm
-	optdepends = python-mycroft-messagebus-client
 	optdepends = python-ovos-audio>=0.3.1
-	optdepends = python-ovos-backend-client>=0.1.0
 	optdepends = python-ovos-bidirectional-translation-plugin>=0.1.0
 	optdepends = python-ovos-classifiers
-	optdepends = python-ovos-cli-client
 	optdepends = python-ovos-date-parser>=0.0.3
 	optdepends = python-ovos-dinkum-listener>=0.3.2
 	optdepends = python-ovos-gui>=0.2.2
-	optdepends = python-ovos-lingua-franca>=0.4.7
-	optdepends = python-ovos-listener>=0.0.3
 	optdepends = python-ovos-messagebus>=0.0.7
 	optdepends = python-ovos-number-parser>=0.0.1
 	optdepends = python-ovos-padatious>=1.1.0
@@ -56,6 +49,7 @@ pkgbase = python-ovos-core
 	optdepends = python-ovos-skill-confucius-quotes>=0.1.7
 	optdepends = python-ovos-skill-date-time>=0.4.2
 	optdepends = python-ovos-skill-days-in-history>=0.3.6
+	optdepends = python-ovos-skill-diagnostics>=0.0.2
 	optdepends = python-ovos-skill-dictation>=0.2.5
 	optdepends = python-ovos-skill-fallback-unknown>=0.1.5
 	optdepends = python-ovos-skill-hello-world>=0.1.10
@@ -82,22 +76,15 @@ pkgbase = python-ovos-core
 	optdepends = python-ovos-skill-weather>=0.1.11
 	optdepends = python-ovos-skill-wikihow>=0.2.5
 	optdepends = python-ovos-skill-wikipedia>=0.5.3
+	optdepends = python-ovos-skill-youtube-music>=0.1.6
 	optdepends = python-ovos-translate-server-plugin>=0.0.2
-	optdepends = python-ovos-tts-plugin-mimic>=0.2.8
 	optdepends = python-ovos-utterance-corrections-plugin>=0.0.2
 	optdepends = python-ovos-utterance-normalizer>=0.2.1
 	optdepends = python-ovos-utterance-plugin-cancel>=0.2.3
-	optdepends = python-ovos-ww-plugin-pocketsphinx>=0.1
-	optdepends = python-ovos-ww-plugin-precise>=0.1
-	optdepends = python-pillow>=8.3
-	optdepends = python-pyalsaaudio>=0.8
-	optdepends = python-pyaudio
-	optdepends = python-pyserial>=3.0
 	optdepends = python-skill-ddg>=0.1.9
 	optdepends = python-skill-news>=0.1.8
 	optdepends = python-skill-wolfie>=0.2.9
 	optdepends = python-skill-wordnet>=0.0.10
-	optdepends = python-vlc>=1.1.2
 	provides = ovos-skills-messagebus
 	conflicts = ovos-skills-messagebus
 	conflicts = python-combo-lock>=0.4
@@ -105,7 +92,6 @@ pkgbase = python-ovos-core
 	conflicts = python-fann2>=1.1.0
 	conflicts = python-ovos-adapt-parser>=2.0.0
 	conflicts = python-ovos-audio>=1.0.0
-	conflicts = python-ovos-backend-client>=2.0.0
 	conflicts = python-ovos-bidirectional-translation-plugin>=1.0.0
 	conflicts = python-ovos-bus-client>=2.0.0
 	conflicts = python-ovos-common-query-pipeline-plugin>=2.0.0
@@ -113,8 +99,6 @@ pkgbase = python-ovos-core
 	conflicts = python-ovos-date-parser>=1.0.0
 	conflicts = python-ovos-dinkum-listener>=1.0.0
 	conflicts = python-ovos-gui>=2.0.0
-	conflicts = python-ovos-lingua-franca>=1.0.0
-	conflicts = python-ovos-listener>=1.0.0
 	conflicts = python-ovos-messagebus>=1.0.0
 	conflicts = python-ovos-number-parser>=1.0.0
 	conflicts = python-ovos-ocp-pipeline-plugin>=2.0.0
@@ -157,15 +141,13 @@ pkgbase = python-ovos-core
 	conflicts = python-ovos-skill-weather>=1.0.0
 	conflicts = python-ovos-skill-wikihow>=1.0.0
 	conflicts = python-ovos-skill-wikipedia>=1.0.0
+	conflicts = python-ovos-skill-youtube-music>=1.0.0
 	conflicts = python-ovos-translate-server-plugin>=1.0.0
-	conflicts = python-ovos-tts-plugin-mimic>=1.0.0
 	conflicts = python-ovos-utils>=1.0.0
 	conflicts = python-ovos-utterance-corrections-plugin>=1.0.0
 	conflicts = python-ovos-utterance-normalizer>=1.0.0
 	conflicts = python-ovos-utterance-plugin-cancel>=1.0.0
 	conflicts = python-ovos-workshop>=4.0.0
-	conflicts = python-ovos-ww-plugin-pocketsphinx>=1.0.0
-	conflicts = python-ovos-ww-plugin-precise>=1.0.0
 	conflicts = python-padacioso>=2.0.0
 	conflicts = python-requests>=3.0
 	conflicts = python-skill-ddg>=1.0.0
@@ -173,11 +155,11 @@ pkgbase = python-ovos-core
 	conflicts = python-skill-wolfie>=1.0.0
 	conflicts = python-skill-wordnet>=1.0.0
 	conflicts = python-watchdog>=3.0
-	source = https://github.com/OpenVoiceOS/ovos-core/archive/22bb9565bfd74fe3a359fc87fc9fd964b8ffc124.tar.gz
+	source = https://github.com/OpenVoiceOS/ovos-core/archive/f7baf562e19d9f527f4eed2744c11b148933793a.tar.gz
 	source = ovos-skills-messagebus.service
 	source = ovos-systemd_skills_messagebus.py
 	source = ovos-skills.install
-	sha256sums = 550ab6fdb39c01d04815cefa84dc5aaa8271454b68beeb2f434dfc772c472d28
+	sha256sums = 8bc3ebac109ce45e30451f3cb0976c0af2d9c258d962a0248e631f565e5fe6f6
 	sha256sums = 8a9491bfc586cb801d0b904205f8e4f98a23333d48a717dccc0e62c5949398ad
 	sha256sums = bd403865bdadd82502beb861589da1e050d6885702b6b1a5f6911cdf2de4742a
 	sha256sums = 8835b79d49ac07c4822e9c397816e4e02631da65702a90e87359d205bde63f80
