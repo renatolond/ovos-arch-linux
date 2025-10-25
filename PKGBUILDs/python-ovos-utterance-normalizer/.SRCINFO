@@ -1,0 +1,21 @@
+pkgbase = python-ovos-utterance-normalizer
+	pkgdesc = The OVOS Common Query Framework is designed to answer questions by gathering answers from several skills and selecting the best one
+	pkgver = 0.2.2
+	pkgrel = 1
+	url = https://github.com/OpenVoiceOS/ovos-utterance-normalizer
+	arch = any
+	license = Apache
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-setuptools
+	depends = python
+	depends = python-ftfy
+	depends = python-ovos-plugin-manager>=0.0.25
+	depends = python-ovos-utils>=0.0.38
+	depends = python-quebra-frases
+	conflicts = python-ovos-plugin-manager>=2.0.0
+	source = https://github.com/OpenVoiceOS/ovos-utterance-normalizer/archive/refs/tags/0.2.2.tar.gz
+	sha256sums = 13f647e25d455c350e03fc6b9f70fadf20bdbdfbeb9e27feb6bd4ef0b7d45f5b
+
+pkgname = python-ovos-utterance-normalizer
